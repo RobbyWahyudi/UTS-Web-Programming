@@ -1,0 +1,14 @@
+.banner {
+  background-image: url("/static/img/banner.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 340px;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.container h2 {
+  color: #ff6b02;
+}

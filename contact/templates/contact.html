@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}{{title}}{% endblock title %}
+
+{% block app_css %}
+<link rel="stylesheet" href="{% static "css/contact1.css" %}">
+{% endblock app_css %}
+
+{% block content %}
+    <!--Section: Contact v.2-->
+<div class="container mb-5">
+
+    <!--Section heading-->
+    <h2 class="display-5 fw-bold mb-3 text-center">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Apakah Anda memiliki pertanyaan? Jangan ragu untuk menghubungi kami secara langsung. Tim kami akan menghubungi Anda kembali dalam hitungan jam untuk membantu Anda.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-3">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Nama</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-3">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Subjek</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12 mb-5">
+
+                        <div class="md-form">
+                            <label for="message">Pesan</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn text-light">Kirim</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</div>
+<!--Section: Contact v.2-->
+{% endblock content %}

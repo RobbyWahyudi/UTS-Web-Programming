@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}{{title}}{% endblock title %}
+
+{% block app_css %}
+<link rel="stylesheet" href="{% static "css/product.css" %}">
+{% endblock app_css %}
+
+{% block content %}
+<div class="container mb-5">
+  <h2 class="display-5 fw-bold mb-3">Products</h2>
+  
+  <div class="input-group mb-3">
+    <input type="search" class="form-control" placeholder="Cari Produk" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" class="btn btn-outline-primary">
+      <ion-icon name="search-outline" class="search-icon fs-5"></ion-icon>
+    </button>
+  </div>
+
+  <div class="row row-cols-2 row-cols-md-3 g-3">
+    {% for i in products %}
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static "img/" %}{{i.gambar}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{i.nama_produk}}</h5>
+          <p class="card-text">IDR {{i.harga}}</p>
+          <button class="btn btn-primary">Lihat Detail</button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+{% endblock content %}

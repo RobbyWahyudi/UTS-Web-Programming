@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}{{title}}{% endblock title %}
+
+{% block app_css %}
+<link rel="stylesheet" href="{% static "css/about.css" %}">
+{% endblock app_css %}
+
+{% block content %}
+<div class="banner p-5 mb-5"></div>
+
+<div class="container col-lg-8 mx-auto">
+    <h2 class="text-center display-5 fw-bold mb-4">About Us</h2>
+    <p class="fs-5">Robby Essentials adalah sebuah brand pakaian pria yang menggabungkan gaya klasik dengan sentuhan modern untuk menciptakan koleksi yang elegan dan kontemporer. Dengan fokus pada kualitas bahan dan desain yang teliti, setiap produk Robby Essentials mencerminkan dedikasi kami terhadap detail dan komitmen untuk memberikan pakaian yang tidak hanya tahan lama, tetapi juga memberikan gaya yang autentik.</p>
+
+    <p class="fs-5">Koleksi kami mencakup berbagai jenis pakaian, mulai dari pakaian sehari-hari yang nyaman hingga busana formal yang menampilkan keanggunan sejati. Menggabungkan kain berkualitas tinggi dengan pemilihan warna yang terinspirasi dari tren terkini, setiap potongan pakaian dari Robby Essentials dirancang untuk menonjolkan individualitas dan gaya Anda.
+    </p>
+
+    <p class="fs-5">Kami percaya bahwa pakaian adalah cara untuk mengekspresikan diri, dan kami berkomitmen untuk memberikan opsi yang memungkinkan setiap pria menampilkan kepribadian mereka melalui gaya berpakaian. Dengan Robby Essentials, Anda akan menemukan pilihan pakaian yang tidak hanya memenuhi kebutuhan fungsional Anda, tetapi juga menambahkan sentuhan unik dan kelas ke lemari pakaian Anda.</p>
+    
+    <p class="fs-5">Mari bergabung dengan kami dalam perjalanan gaya pria yang tak terlupakan dengan Robby Essentials. Temukan koleksi terbaru kami dan temukan pakaian yang akan memancarkan kepercayaan diri Anda, di setiap langkah perjalanan hidup Anda.</p>
+</div>
+{% endblock content %}
+

@@ -1,0 +1,12 @@
+.container {
+  margin-top: 100px;
+}
+
+.container h2 {
+  color: #ff6b02;
+}
+
+.container .btn {
+  background-color: #ff6b02;
+  width: 80px;
+}
